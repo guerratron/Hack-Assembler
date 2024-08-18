@@ -1,0 +1,6 @@
+{
+  "name": "Hack-Assembler",
+  "tagline": "HACK-ASM machine language assembler, both mnemonic (symbolic) and binary, is a HACK-type .asm file assembler with a mini-REPL interface. (It's writed in LUA)",
+  "body": "# Hack-Assembler #\r\n[![hack-assembler logo](assets/hack_assembler_logo.png \"Hack-Assembler GitHub page\")](http://guerratron.github.io/HackAssembler \"Hack-Assembler page\")  \r\n_Hack-Assembler. Juan José Guerra Haba - 2024 - dinertron@gmail.com  \r\nhackassembler-full@lists.osdn.me - hackassembler-private@lists.osdn.me_\r\n\r\n## DEFINITION: ##\r\nThis app converts HACK-ASM code to HACK-BIN binary (in plain text format) so it can be played on the “Hack Computer” virtual machine.  \r\nThis is the result of the very complete NAND2Tetris course where you end up building, ideally, a PC starting from the most basic elements such as Nand logic gates to more complicated elements such as register and memory structures, ALU, … until reaching a mini-VC with all the hardware simulated by software.    \r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
