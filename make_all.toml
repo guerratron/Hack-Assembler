@@ -1,0 +1,25 @@
+# Admite comentarios
+name = "HackAssembler_v1_0"
+default_targets = ["win32", "win64", "lovejs"]
+build_directory  = "build"
+icon_file = "logo_exe.ico"
+love_files = [
+"+*",
+"-*/.*",
+"-./bin/*",
+"-./build/*",
+"-./dist/*"
+]
+
+[windows.exe_metadata]
+FileDescription = "{name} {version}" # "LÖVE {löve version}"
+FileVersion = "1.0" # "{löve version}"
+CompanyName = "" # "LÖVE World Domination Inc."
+LegalCopyright = "by GuerraTron24 <dinertron@gmail.com>" # "Copyright © 2006-2020 LÖVE Development Team" or ""
+ProductName = "{name}" # "LÖVE"
+ProductVersion = "<same as FileVersion>"
+OriginalFilename = "HackAssemblerv1.exe" # "love.exe"
+
+[lovejs]
+title = "HackAssembler v1.0 - by GuerraTron24"  # used on the resulting web page
+memory = "10000000"  # starting memory of the webpage (default is 20 MB)

@@ -1,0 +1,45 @@
+// EJERCICIOS: SOLO PUEDEN UTILIZARSE LAS SIGUIENTES EXPRESIONES
+//@CONSTANT (A -> constant)
+//A=1
+//D=1
+//M=0
+//...
+//A=M
+//D=M
+//M=D
+//...
+//A=D-A
+//D=D+A
+//D=D+M
+//...
+
+// Computes: 
+// if (D = 0) goto 300
+  //1. @300
+  //2. D;JEQ
+// if (RAM[3] < 100) goto 12
+//PRIMERO PONEMOS EN RAM[3]=99 (POR EJEMPLO)
+
+//@3 //SELECCIONAMOS LA RAM[3]
+//D=M //GUARDAMOS SU VALOR (99) EN D
+//@100 //PONEMOS EL VALOR 100 EN A
+//D=D-A //RESTAMOS 99-100 = -1
+//@12 //PONEMOS LA DIRECCIÓN DE INSTRUCCIÓN 12 EN A
+//D;JLT //SALTAMOS A ESA INSTRUCCIÓN SI D < 0
+
+
+// PROGRAMA QUE INCREMENTA EN UNO EN BUCLE HASTA UN MÁXIMO Y LUEGO SALE
+@max //0.
+M=A  //1.
+@sum //2.
+M=0  //3.
+
+(LOOP)
+@sum //4.
+M=M+1
+D=M
+@max
+D=D-M
+@LOOP // OR 4
+D;JLT
+(END)
